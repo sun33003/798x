@@ -159,10 +159,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Configure OpenWrt Router IP
-      hosts: openwrt_router
-      gather_facts: no
-      tasks:
+---
+- name: Configure OpenWrt Router IP
+  hosts: openwrt_router
+  gather_facts: no
+  tasks:
     - name: Set default IP address
       ansible.builtin.shell: |
         uci set network.lan.ipaddr='192.168.88.1'
