@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.88.1/g' package/base-files/files/bin/config_genera
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-sed -i 's/OpenWrt/237immWrt/g' package/base-files/files/bin/config_generate
+# sed -i 's/OpenWrt/237immWrt/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
-sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=AP-$(shell date +"%Y%m%d")-/1' include/image.mk
+# sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=AP-$(shell date +"%Y%m%d")-/1' include/image.mk
