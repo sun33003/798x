@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build zh-882s
+name: Build e88s
 
 on:
   repository_dispatch:
