@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.222.1/g' package/base-files/files/bin/config_gener
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-#sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/OneCloud/g' package/base-files/files/bin/config_generate
 
-# rm -rf feeds/packages/utils/watchcat
-# git clone --depth=1 https://github.com/openwrt/packages/tree/master/utils/watchcat feeds/packages/utils/watchcat
+# 替换终端为bash
+sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
