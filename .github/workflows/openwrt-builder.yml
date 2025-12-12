@@ -6,7 +6,7 @@ on:
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
-  CONFIG_FILE: .config
+  CONFIG_FILE: jcg_q30pro_ssrplus_full.config
   TZ: Asia/Shanghai
   UPLOAD_RELEASE: true
 
